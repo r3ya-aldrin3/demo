@@ -1,0 +1,29 @@
+def odd_or_even(w):
+    #To check whether number is odd or even
+    if w%2==0:
+        return "Even"
+    else:
+        return "Odd"
+def integer_type(x):
+    #To check whether number is positive or negative
+    if x>=0:
+        return "Positive" 
+    else:
+        return "Negative"
+def square(y):
+    #To find the square of the number
+    sq= y**2
+    return sq
+def cube(z):
+    #To find the cube of the number
+    cb= z**3
+    return cb
+def main():
+    #Main program, to get user input
+    num= int(input("Enter a number: "))
+    print("Odd or Even= ",odd_or_even(num))
+    print("Postive or Negative= ", integer_type(num))
+    print("Square= ", square(num))
+    print("Cube= ", cube(num))
+
+main()
